@@ -2,7 +2,26 @@ from command.QUERY import Get_Query
 
 
 if __name__ == "__main__":
-    Get_Query()
+  
+  Current_Mode = "ASSISTANT"
+  
+  # Engagment Loop
+  while(True):
+    
+    if Current_Mode == "STAND_BY":
+      break
+    # TO DO: Implement Alexa type functionality on standby activation
+    
+    elif Current_Mode == "ASSISTANT":
+      Get_Query()
+      Current_Mode = "STAND_BY"
+      
+    elif Current_Mode == "CONVERSE":
+      
+      Current_Mode = "STAND_BY"
+      # TO DO: Implement Converse.py first
+      
+    
 
 
 
