@@ -1,0 +1,12 @@
+TO DO LIST ----------------------------------
+
+CURRENT
+- Move Chat call to Response Variation to get simple requests and chat response integrated together.
+
+1. Hit 11Labs API to get voice up and running
+2. Add snide comments that are triggered periodically <- Humanization
+3. Add affirmations that are triggered periodically <- Humanization
+4. Finish Assistant Mode, allowing bot to respond to user input and control different tech
+5. Create Converse Mode which allows user to communicate with different character.ai personalities
+6. Add functionality to allow user to switch between different character.ai personalities
+7. Add functionality to allow user to switch between different modes

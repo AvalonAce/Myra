@@ -46,16 +46,14 @@ def takeCommand():
 		try:
 			print("Recognizing")
 			
-			# for Listening the command in indian
-			# english we can also use 'hi-In' 
-			# for hindi recognizing
+
 			Query = r.recognize_google(audio, language='en-in')
 			print("the command is printed=", Query)
 			
 		except Exception as e:
 			print(e)
 			print("Retrying...")
-			return "None"
+			return "NONE"
 		
 		return Query
 
