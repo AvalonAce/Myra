@@ -155,3 +155,4 @@ cython_debug/
 # OpenAI Environment
 /openai-env
 config.py
+audio/config.py

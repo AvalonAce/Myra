@@ -1,6 +1,6 @@
 import speech_recognition as sr
 
-from audio.AUDIO import Speak, takeCommand
+from audio.AUDIO import Speak, takeCommand, Say
 from command.Simple_Requests import Simple_Requests
 from interpretation.MODE_ASSISTANT import Question_Parse
 
@@ -26,6 +26,10 @@ thread = client.beta.threads.create()
 
 # ----------------------------------------------------------------
 
+def Introduction():
+	Say(f"Hey {USER_NAME}, What's up?...")
+ 
+ 
 
 def Get_Query():
     
@@ -48,7 +52,7 @@ def Get_Query():
         
         # Exit Condition
         if 'never mind' in query: 
-            print('Exiting...')
+            Say("Kay... See you later...")
             break
         
         # Question Parsing --------------------------------------------
@@ -63,10 +67,10 @@ def Get_Query():
             
             
             # Identity 
-            # TO DO: Consider all of the possible ways to ask for the name
-            # if 'you' or 'your name' in query:
-            #     Speak("My name is Myra. I am your personal assistant.")
-            #     continue
+            # TO DO: Consider all of the possible ways to ask for the name, account for variation
+            if 'you' or 'your name' in query:
+                Say("I'm Myra, dummy... Your personal assistant.")
+                continue
             
             
             # General Questions ---------------------------------------
@@ -80,6 +84,7 @@ def Get_Query():
                     {"role": "user", "content": query}
                 ]
             )
+            
             # Get the response
             notResponded = True
             while (notResponded):
@@ -118,7 +123,3 @@ def Get_Query():
             Speak("Opening Google...")
             Simple_Requests.openWebSearch()
             continue
-        
-        
-def Introduction():
-	Speak(f"Hello {USER_NAME}, How can I help you?")

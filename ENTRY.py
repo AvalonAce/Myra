@@ -1,8 +1,12 @@
 from command.QUERY import Get_Query
 
+starterVoice = "Taron"
+currentVoice = starterVoice
+
 
 if __name__ == "__main__":
   
+  # Initialization
   Current_Mode = "ASSISTANT"
   
   # Engagment Loop
@@ -20,10 +24,6 @@ if __name__ == "__main__":
       
       Current_Mode = "STAND_BY"
       # TO DO: Implement Converse.py first
-      
-    
-
-
 
 
 
