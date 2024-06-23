@@ -1,13 +1,16 @@
-from command.QUERY import Get_Query
+from command.QUERY import *
+from build import *
 
-starterVoice = "Taron"
-currentVoice = starterVoice
-
+buildSettings = {
+  "starterVoice": "Taron",
+  "currentVoice": "Taron",
+}
 
 if __name__ == "__main__":
   
   # Initialization
   Current_Mode = "ASSISTANT"
+  Build(buildSettings)
   
   # Engagment Loop
   while(True):
@@ -26,6 +29,13 @@ if __name__ == "__main__":
       # TO DO: Implement Converse.py first
 
 
+# Build ------------------------------------------------
+# Any tasks that need to be done before the assistant is ready to take queries
+# which improves performance or functionality.
+#
+#
+#
+# -----------------------------------------------------
 
 
 

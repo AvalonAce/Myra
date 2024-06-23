@@ -1,7 +1,7 @@
 import webbrowser
 import datetime
 
-from audio.AUDIO import Speak
+from audio.AUDIO import Say
 
 class Simple_Requests:
  
@@ -13,7 +13,7 @@ class Simple_Requests:
 		hour = str(int(hour) - 12) if int(hour) > 12 else hour
 		min = time[14:16]
 		AM_PM = "AM" if int(hour) >= 12 else "PM"
-		Speak("Currently, it is " + hour + " " + min + " " + AM_PM)	 
+		Say("Currently, it is " + hour + " " + min + " " + AM_PM)	 
 	
 	def openWebSearch():
 	# This method will open the web browser: default is google

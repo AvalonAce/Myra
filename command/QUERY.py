@@ -1,6 +1,6 @@
 import speech_recognition as sr
 
-from audio.AUDIO import Speak, takeCommand, Say
+from audio.AUDIO import *
 from command.Simple_Requests import Simple_Requests
 from interpretation.MODE_ASSISTANT import Question_Parse
 
@@ -28,7 +28,6 @@ thread = client.beta.threads.create()
 
 def Introduction():
 	Say(f"Hey {USER_NAME}, What's up?...")
- 
  
 
 def Get_Query():
@@ -90,7 +89,7 @@ def Get_Query():
             while (notResponded):
                 if response.choices[0].message.content != None:
                     print(f'Myra: {response.choices[0].message.content}')
-                    Speak(response.choices[0].message.content)
+                    Say(response.choices[0].message.content)
                     notResponded = False
                 else:
                     print('Waiting for response...')
@@ -120,6 +119,6 @@ def Get_Query():
                 
         # Open Google
         elif "google" in query:
-            Speak("Opening Google...")
+            Say("Opening Google...")
             Simple_Requests.openWebSearch()
             continue
