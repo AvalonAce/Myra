@@ -156,3 +156,4 @@ cython_debug/
 /openai-env
 config.py
 audio/config.py
+response.mp3
