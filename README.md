@@ -1,4 +1,4 @@
-# PCAA - A Personalized Character.AI Assistant
+# PCAA - A Personalized Character AI Assistant
 
 ## Description
 
