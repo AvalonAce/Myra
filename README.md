@@ -2,7 +2,7 @@
 
 ## Description
 
-PCAA is a personalized character.AI assistant that aims to provide a unique and interactive experience for users. It leverages artificial intelligence and natural language processing to understand and respond to user queries.
+PCAA is a personalized character AI assistant that aims to provide a unique and interactive experience for users. It leverages artificial intelligence and natural language processing to understand and respond to user queries.
 
 ## Features
 
