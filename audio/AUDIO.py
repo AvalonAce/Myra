@@ -121,9 +121,9 @@ def Say(text):
 
 	
 		# # DEBUG print headers and payload
-		print(url)
-		print(headers)
-		print(payload)
+		# print(url)
+		# print(headers)
+		# print(payload)
 		
 		# Make the request and save the response
 		response = requests.post(url, json=payload, headers=headers)
