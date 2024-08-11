@@ -3,7 +3,7 @@ import speech_recognition as sr
 import requests
 import playsound
 
-from main_config import ELEVENLABS_API_KEY
+from mainconfig import ELEVENLABS_API_KEY
 from audio.config import *
 
 global useTrueVoice
@@ -121,9 +121,9 @@ def Say(text):
 
 	
 		# # DEBUG print headers and payload
-		# print(url)
-		# print(headers)
-		# print(payload)
+		print(url)
+		print(headers)
+		print(payload)
 		
 		# Make the request and save the response
 		response = requests.post(url, json=payload, headers=headers)

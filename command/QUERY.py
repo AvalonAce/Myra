@@ -5,10 +5,10 @@ from command.Simple_Requests import Simple_Requests
 from interpretation.assistant import Question_Parse
 
 from openai import OpenAI
-from main_config import OPEN_AI_API_KEY, USER_NAME
+from mainconfig import OPEN_AI_API_KEY, USER_NAME
 
 def Introduction():
-	Say(f"Hey {USER_NAME}, What's up?...")
+	Say(f"Hey {USER_NAME}, What's up?")
  
 
 def Get_Query():
