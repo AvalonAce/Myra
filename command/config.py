@@ -1,5 +1,5 @@
 from openai import OpenAI
-from mainconfig import OPEN_AI_API_KEY, USER_NAME
+from main_config import OPEN_AI_API_KEY, USER_NAME
 
 RESPONSE_SYSTEM_CONTEXT = "You are a personal assistant. Answer any questions I have and help me with simple requests."
 client = OpenAI()
