@@ -1,4 +1,4 @@
-# Myra - A Personalized Character AI Assistant
+# Myra - A Personalized Computer-Based Assistant
 
 ## Description
 
