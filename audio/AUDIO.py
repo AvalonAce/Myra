@@ -73,6 +73,7 @@ payload = {
         "style": 0.80,
         "use_speaker_boost": True
     },
+    "seed": 123,
   	"previous_text": "<string>",
   	"next_text": "<string>",
   	"previous_request_ids": [

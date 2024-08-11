@@ -4,7 +4,7 @@ CURRENT
 - Move Chat call to Response Variation to get simple requests and chat response integrated together.
 - Set previous text and next text when needed during API call
 
-1. Hit 11Labs API to get voice up and running
+1. Hit 11Labs API to get voice up and running (DONE)
 2. Add snide comments that are triggered periodically <- Humanization
 3. Add affirmations that are triggered periodically <- Humanization
 4. Finish Assistant Mode, allowing bot to respond to user input and control different tech

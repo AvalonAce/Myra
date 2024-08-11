@@ -2,29 +2,10 @@ import speech_recognition as sr
 
 from audio.AUDIO import *
 from command.Simple_Requests import Simple_Requests
-from interpretation.MODE_ASSISTANT import Question_Parse
+from interpretation.assistant import Question_Parse
 
 from openai import OpenAI
 from config import OPEN_AI_API_KEY, USER_NAME
-from command.command_config import RESPONSE_SYSTEM_CONTEXT
-client = OpenAI()
-
-
-# OpenAI Defintions -------------------------------------
-  
-# Assistant Definition (NOT USED YET) 
-assistant = client.beta.assistants.create(
-  name="Myra",
-  instructions="You are a personal assistant. Answer any questions I have and help me with simple requests. Add a touch of sarcasm sometimes when appropriate, as if you have a small crush on me and wish to humor me.",
-  tools=[{
-      "type": "code_interpreter",
-      "type": "retrieval"
-      }],
-  model="gpt-3.5-turbo",
-)
-thread = client.beta.threads.create()
-
-# ----------------------------------------------------------------
 
 def Introduction():
 	Say(f"Hey {USER_NAME}, What's up?...")
