@@ -1,7 +1,6 @@
 ---
 title: Entry
 ---
-
 <SwmSnippet path="/ENTRY.py" line="9">
 
 ---
@@ -10,24 +9,24 @@ Main Function for Myra
 
 ```python
 if __name__ == "__main__":
-
+  
   # Initialization
   Current_Mode = "ASSISTANT"
   Build(buildSettings)
-
+  
   # Engagment Loop
   while(True):
-
+    
     if Current_Mode == "STAND_BY":
       break
     # TO DO: Implement Alexa type functionality on standby activation
-
+    
     elif Current_Mode == "ASSISTANT":
       Get_Query()
       Current_Mode = "STAND_BY"
-
+      
     elif Current_Mode == "CONVERSE":
-
+      
       Current_Mode = "STAND_BY"
       # TO DO: Implement Converse.py first
 ```
