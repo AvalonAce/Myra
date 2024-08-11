@@ -5,7 +5,7 @@ title: Entry
 
 ---
 
-Main Operating Loop for Mura
+Main Operating Loop for Myra
 
 ```python
 if __name__ == "__main__":
