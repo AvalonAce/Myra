@@ -3,7 +3,7 @@ import speech_recognition as sr
 import requests
 import playsound
 
-from config import ELEVENLABS_API_KEY
+from main_config import ELEVENLABS_API_KEY
 from audio.config import *
 
 global useTrueVoice
