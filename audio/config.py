@@ -31,5 +31,5 @@ class voice:
 # List of voices
 # Enumerate as needed
 voices = [
-   
+   voice("Taron", "Trr0A4w9Xb9LI5l7Vdqa", 0.35, 0.72, 0.55, True)
 ]
