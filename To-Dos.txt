@@ -12,3 +12,4 @@ CURRENT
 6. Add functionality to allow user to switch between different character.ai personalities
 7. Add functionality to allow user to switch between different modes
 8. Add SEED to voiceAPI call to keep track of good and bad responses and set up system accordingly
+-
