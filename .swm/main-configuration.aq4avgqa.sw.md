@@ -1,5 +1,5 @@
 ---
-title: Variable Configuration
+title: Main Configuration
 ---
 <SwmSnippet path="/main_config.py" line="1">
 
