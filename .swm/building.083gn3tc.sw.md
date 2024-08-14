@@ -5,7 +5,7 @@ Myra needs to build specific classes and objects before she can run. The Build f
 
 Current Functions in <SwmToken path="/build.py" pos="11:2:4" line-data="def Build():">`Build()`</SwmToken>:
 
-- <SwmToken path="/audio/AUDIO.py" pos="149:2:2" line-data="def setVoice(voiceName):">`setVoice`</SwmToken>
+- <SwmToken path="/audio/AUDIO.py" pos="149:2:2" line-data="def Set_Voice(voiceName):">`Set_Voice`</SwmToken>
 
 <SwmSnippet path="/build.py" line="11">
 
@@ -15,7 +15,7 @@ Current Build Function
 
 ```python
 def Build():
-  setVoice(BUILD_SETTINGS["starterVoice"])
+  Set_Voice(BUILD_SETTINGS["starterVoice"])
   pass
 ```
 

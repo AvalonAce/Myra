@@ -12,7 +12,7 @@ The main features of audio configuration are:
 - Class voice
 - voices\[\]
 
-## <SwmToken path="/audio/config.py" pos="4:0:2" line-data="class voice:">`class voice`</SwmToken>
+## <SwmToken path="/audio/config.py" pos="4:0:2" line-data="class Voice:">`class Voice`</SwmToken>
 
 <SwmSnippet path="/audio/config.py" line="4">
 
@@ -21,7 +21,7 @@ The main features of audio configuration are:
 Structure for voice class
 
 ```python
-class voice:
+class Voice:
     def __init__(self, name, id, stability, similarity, style, speakerBoost):
         self.name = name
         self.id = id
@@ -63,7 +63,7 @@ Class voice is an object that defines a voice Myra can use and is based on the E
 
 ## voices\[\]
 
-<SwmSnippet path="audio/config.py" line="33">
+<SwmSnippet path="/audio/config.py" line="33">
 
 ---
 
@@ -71,7 +71,7 @@ Voices Array
 
 ```
 voices = [
-   voice("Taron", "Trr0A4w9Xb9LI5l7Vdqa", 0.35, 0.72, 0.55, True)
+   Voice("Taron", "Trr0A4w9Xb9LI5l7Vdqa", 0.35, 0.72, 0.55, True)
 ]
 ```
 

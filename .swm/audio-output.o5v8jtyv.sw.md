@@ -18,11 +18,11 @@ This is the main audio production file for Myra. There are two operating voice m
 
 Here are the available functions:
 
-- <SwmToken path="/audio/AUDIO.py" pos="21:2:2" line-data="def takeCommand():">`takeCommand`</SwmToken>
+- <SwmToken path="/audio/AUDIO.py" pos="21:2:2" line-data="def Take_Command():">`Take_Command`</SwmToken>
 - <SwmToken path="/audio/AUDIO.py" pos="88:2:4" line-data="def Say(text):">`Say(text`</SwmToken>)
-- <SwmToken path="/audio/AUDIO.py" pos="149:2:4" line-data="def setVoice(voiceName):">`setVoice(voiceName`</SwmToken>)
+- <SwmToken path="/audio/AUDIO.py" pos="149:2:4" line-data="def Set_Voice(voiceName):">`Set_Voice(voiceName`</SwmToken>)
 
-### <SwmToken path="/audio/AUDIO.py" pos="21:2:4" line-data="def takeCommand():">`takeCommand()`</SwmToken>
+### <SwmToken path="/audio/AUDIO.py" pos="21:2:4" line-data="def Take_Command():">`Take_Command()`</SwmToken>
 
 This function uses python's base speech recognition and audio recognition to recognize a user's voice and turn it into a query.
 
@@ -33,7 +33,7 @@ This function uses python's base speech recognition and audio recognition to rec
 Function definition.&nbsp;
 
 ```python
-def takeCommand():
+def Take_Command():
 
 	r = sr.Recognizer()
 

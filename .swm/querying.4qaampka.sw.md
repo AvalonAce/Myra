@@ -9,8 +9,8 @@ This doc gives a high level overview of how querying works for Myra. The assista
 
 The main functions of <SwmPath>[command/QUERY.py](/command/QUERY.py)</SwmPath> are:
 
-- <SwmToken path="/command/QUERY.py" pos="10:2:4" line-data="def Introduction():">`Introduction()`</SwmToken>&nbsp;
-- <SwmToken path="/command/QUERY.py" pos="14:2:4" line-data="def Get_Query():">`Get_Query()`</SwmToken>
+- <SwmToken path="/command/QUERY.py" pos="11:2:4" line-data="def Introduction():">`Introduction()`</SwmToken>
+- <SwmToken path="/command/QUERY.py" pos="15:2:4" line-data="def Get_Query():">`Get_Query()`</SwmToken>
 
 ## Design Decisions & Expansions
 
@@ -18,16 +18,16 @@ A singular function is used to determine queries for **Assistant Mode.** A singu
 
 Regarding expansions, more functions can be made and are possibly necessary for other modes and needed for more functionality. It is encouraged to keep querying a simple as possible.
 
-## <SwmToken path="/command/QUERY.py" pos="14:2:4" line-data="def Get_Query():">`Get_Query()`</SwmToken>
+## <SwmToken path="/command/QUERY.py" pos="15:2:4" line-data="def Get_Query():">`Get_Query()`</SwmToken>
 
-This function is the **main query** **loop** for **Assistant Mode**. It starts with an <SwmToken path="/command/QUERY.py" pos="10:2:4" line-data="def Introduction():">`Introduction()`</SwmToken> and follows a while loop to take in a query from <SwmToken path="/audio/AUDIO.py" pos="21:2:2" line-data="def takeCommand():">`takeCommand`</SwmToken> and respond to the query accordingly.&nbsp;
+This function is the **main query** **loop** for **Assistant Mode**. It starts with an <SwmToken path="/command/QUERY.py" pos="11:2:4" line-data="def Introduction():">`Introduction()`</SwmToken> and follows a while loop to take in a query from <SwmToken path="/audio/AUDIO.py" pos="21:2:2" line-data="def Take_Command():">`Take_Command`</SwmToken> and respond to the query accordingly.&nbsp;
 
 The current functionality of the function are:
 
 - Return name of assistant
 - Opening Google
 
-<SwmSnippet path="/command/QUERY.py" line="14">
+<SwmSnippet path="/command/QUERY.py" line="15">
 
 ---
 
@@ -41,7 +41,7 @@ def Get_Query():
     while(True):
         
         # Initialize the query ----------------------------------------
-        query = takeCommand().lower()
+        query = Take_Command().lower()
         if query == "NONE": continue
         print(f"User: {query}")
         
@@ -66,7 +66,7 @@ def Get_Query():
         # Questions about Myra will be answered with a specific response for now. TO DO: Implement a more complex response which involves a call to personality API from character.ai.
         # General questions which are not about Myra will be met with a ChatGPT response.
         #
-        elif Question_Parse.is_question(query):
+        elif Question_Parse.Is_Question(query):
             
             
             # Identity 
@@ -123,8 +123,8 @@ def Get_Query():
                 
         # Open Google
         elif "google" in query:
-            Say("Opening Google...")
-            Simple_Requests.openWebSearch()
+            Say("Opening Google.")
+            Open_Websearch()
             continue
 ```
 
@@ -132,11 +132,11 @@ def Get_Query():
 
 </SwmSnippet>
 
-## <SwmToken path="/command/QUERY.py" pos="10:2:4" line-data="def Introduction():">`Introduction()`</SwmToken>
+## <SwmToken path="/command/QUERY.py" pos="11:2:4" line-data="def Introduction():">`Introduction()`</SwmToken>
 
 This is the introduction function used to introduce the assistant. It serves two purposes, to introduce Myra on startup and indicate that the user has switched from any other mode to **Assistant Mode**.&nbsp;
 
-<SwmSnippet path="/command/QUERY.py" line="9">
+<SwmSnippet path="/command/QUERY.py" line="10">
 
 ---
 

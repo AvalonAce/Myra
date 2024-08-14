@@ -22,7 +22,7 @@ if __name__ == "__main__":
     if Current_Mode == "TESTING":
       # Run the test suite if the mode is TESTING
       # Ensure the test suite is configured before use
-      run_test_suite()
+      Run_Test_Suite()
       break
     
     
