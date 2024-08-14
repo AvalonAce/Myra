@@ -3,7 +3,7 @@ title: Question Parse
 ---
 ## Introduction
 
-This doc gives a high level overview of <SwmPath>[interpretation/assistant/Question_Parse.py](/interpretation/assistant/Question_Parse.py)</SwmPath>. It is a helper file that is functions as a helper file to determine questions in a query.
+This doc gives a high level overview of <SwmPath>[interpretation/assistant/Question_Parse.py](/interpretation/assistant/Question_Parse.py)</SwmPath>. It is a functional file that is functions as a helper file to determine questions in a query.
 
 ## Main features
 
