@@ -10,7 +10,7 @@ global useSystemVoice
 global activeVoice
 global previousText
 
-useSystemVoice = True
+useSystemVoice = False
 activeVoice = Voice("", "", 0.45, 0.72, 0.80, True)
 previousText = ""
 
