@@ -3,7 +3,7 @@ title: Entry / Main Function
 ---
 This is the main function for Myra that runs as the program's main execution thread. First, the program will be set to a default operating mode: Assistant, then it will Build using the build settings, and then run on a loop in the designated mode for the user.
 
-<SwmSnippet path="/ENTRY.py" line="4">
+<SwmSnippet path="/ENTRY.py" line="5">
 
 ---
 
@@ -19,18 +19,20 @@ if __name__ == "__main__":
   # Engagment Loop
   while(True):
     
-    if Current_Mode == "STAND_BY":
+    if Current_Mode == "TESTING":
+      # Run the test suite if the mode is TESTING
+      # Ensure the test suite is configured before use
+      run_test_suite()
       break
-    # TO DO: Implement Alexa type functionality on standby activation
+    
     
     elif Current_Mode == "ASSISTANT":
+      # Begin the assistant's main loop to take queries
       Get_Query()
-      Current_Mode = "STAND_BY"
       
+    
     elif Current_Mode == "CONVERSE":
       
-      Current_Mode = "STAND_BY"
-      # TO DO: Implement Converse.py first
 ```
 
 ---
