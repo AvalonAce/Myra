@@ -4,8 +4,9 @@ from audio.AUDIO import *
 from command.Simple_Requests import *
 from interpretation.assistant import Question_Parse
 
-from openai import OpenAI
+
 from main_config import OPEN_AI_API_KEY, USER_NAME
+from command.config import *
 
 def Introduction():
 	Say(f"Hey {USER_NAME}, What's up?...")
@@ -100,6 +101,6 @@ def Get_Query():
                 
         # Open Google
         elif "google" in query:
-            Say("Opening Google...")
-            Open_Websearch("google.com")
+            Say("Opening Google.")
+            Open_Websearch()
             continue
