@@ -26,7 +26,7 @@ These are the proper naming conventions to be followed for files, folderg, and a
 
 ## Commenting
 
-Comments should be kept concise and small if embedded into code. If larger blocks of comments are needed, such as the beginning of the file or to explain a section of code, using dashes to separated a block of lines is preferred.
+Comments should be kept concise and small if embedded into code. If larger blocks of comments are needed, such as the beginning of the file or to explain a section of code, using dashes to separate a block of lines is preferred.
 
 <SwmSnippet path="/command/QUERY.py" line="91">
 
