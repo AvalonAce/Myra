@@ -5,7 +5,7 @@ The proper conventions for the repo can found in this document. Please refer to 
 
 ## Naming Conventions
 
-These are the proper naming conventions to be followed for files, folder, and anything else:
+These are the proper naming conventions to be followed for files, folderg, and anything else:
 
 - **Folders:** all lower case (audio, command)
 - **Configuration Files:** all lower case, must be named **config**.&nbsp;
@@ -14,8 +14,8 @@ These are the proper naming conventions to be followed for files, folder, and an
   - HL Files are files which hold the most operational logic and use functional files to complete operations.&nbsp;
 - **Functional Files:** Capitalized Snakecase (Response_Variation, Simple_Tasks).
   - Functional files contain functions that are used in operations by the assistant.&nbsp;
-- **Miscellaneous Files:** Regular Snakecase (build.py)
-  - Any file that isn't an config, HL, or functional file.
+- **Miscellaneous Files:** Regular Snakecase ([build.py](http://build.py))
+  - Any file that isn't a config, HL, or functional file.
 - **Variables**
   - **Regular:** Camelcase (useSystemVoice, previousText)
   - **Static:** Full Capitalized Snakecase (ELEVENLABS_API_KEY)
