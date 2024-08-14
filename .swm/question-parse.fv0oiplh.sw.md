@@ -9,21 +9,21 @@ This doc gives a high level overview of <SwmPath>[interpretation/assistant/Quest
 
 The main features of the file are are:
 
-- <SwmToken path="/interpretation/assistant/Question_Parse.py" pos="13:2:4" line-data="def is_question(sentence):">`is_question(sentence`</SwmToken>)
-- <SwmToken path="/interpretation/assistant/Question_Parse.py" pos="34:2:4" line-data="def test_is_question(sentence):">`test_is_question(sentence`</SwmToken>)
+- <SwmToken path="/interpretation/assistant/Question_Parse.py" pos="14:2:4" line-data="def Is_Question(sentence):">`Is_Question(sentence`</SwmToken>)
+- <SwmToken path="/interpretation/assistant/Question_Parse.py" pos="35:2:4" line-data="def Test_Is_Question(sentence):">`Test_Is_Question(sentence`</SwmToken>)
 
-## <SwmToken path="/interpretation/assistant/Question_Parse.py" pos="13:2:4" line-data="def is_question(sentence):">`is_question(sentence`</SwmToken>)
+## <SwmToken path="/interpretation/assistant/Question_Parse.py" pos="14:2:4" line-data="def Is_Question(sentence):">`Is_Question(sentence`</SwmToken>)
 
 This function uses python's NLTK to tokenize a sentence it takes (in this case a query), to determine if there is a question in it, returning true if there is.
 
-<SwmSnippet path="/interpretation/assistant/Question_Parse.py" line="13">
+<SwmSnippet path="/interpretation/assistant/Question_Parse.py" line="14">
 
 ---
 
 Function Definition
 
 ```python
-def is_question(sentence):
+def Is_Question(sentence):
     
     # Tokenize and tag
     words = word_tokenize(sentence)
@@ -43,26 +43,25 @@ def is_question(sentence):
         return True
     
     return False
-
 ```
 
 ---
 
 </SwmSnippet>
 
-## <SwmToken path="/interpretation/assistant/Question_Parse.py" pos="34:2:4" line-data="def test_is_question(sentence):">`test_is_question(sentence`</SwmToken>)
+## <SwmToken path="/interpretation/assistant/Question_Parse.py" pos="35:2:4" line-data="def Test_Is_Question(sentence):">`Test_Is_Question(sentence`</SwmToken>)
 
-This function is a test function used to determine questions. It uses <SwmToken path="/interpretation/assistant/Question_Parse.py" pos="13:2:4" line-data="def is_question(sentence):">`is_question(sentence`</SwmToken>) as a baseline.&nbsp;
+This function is a test function used to determine questions. It uses <SwmToken path="/interpretation/assistant/Question_Parse.py" pos="14:2:4" line-data="def Is_Question(sentence):">`Is_Question(sentence`</SwmToken>) as a baseline.&nbsp;
 
-<SwmSnippet path="/interpretation/assistant/Question_Parse.py" line="34">
+<SwmSnippet path="/interpretation/assistant/Question_Parse.py" line="35">
 
 ---
 
 Function Definition
 
 ```python
-def test_is_question(sentence):
-    if is_question(sentence):
+def Test_Is_Question(sentence):
+    if Is_Question(sentence):
         print(f"'{sentence}' is a question.")
     else:
         print(f"'{sentence}' is not a question.")
