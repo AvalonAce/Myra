@@ -1,7 +1,7 @@
 import speech_recognition as sr
 
 from audio.AUDIO import *
-from command.Simple_Requests import Simple_Requests
+from command.Simple_Requests import *
 from interpretation.assistant import Question_Parse
 
 from openai import OpenAI
