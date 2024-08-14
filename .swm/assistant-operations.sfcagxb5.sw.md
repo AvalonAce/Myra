@@ -9,6 +9,7 @@ This doc gives a high level overview of how Myra can complete operations from co
 
 The main files that the assistant uses to complete operations are:
 
+- <SwmPath>[command/QUERY.py](/command/QUERY.py)</SwmPath>
 - <SwmPath>[command/Simple_Requests.py](/command/Simple_Requests.py)</SwmPath>
 - <SwmPath>[command/Sys_Interaction.py](/command/Sys_Interaction.py)</SwmPath>
 
