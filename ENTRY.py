@@ -1,4 +1,5 @@
 from command.QUERY import *
+from testing.TESTING import run_test_suite
 from build import *
 
 if __name__ == "__main__":
@@ -10,26 +11,18 @@ if __name__ == "__main__":
   # Engagment Loop
   while(True):
     
-    if Current_Mode == "STAND_BY":
+    if Current_Mode == "TESTING":
+      # Run the test suite if the mode is TESTING
+      # Ensure the test suite is configured before use
+      run_test_suite()
       break
-    # TO DO: Implement Alexa type functionality on standby activation
+    
     
     elif Current_Mode == "ASSISTANT":
+      # Begin the assistant's main loop to take queries
       Get_Query()
-      Current_Mode = "STAND_BY"
       
+    
     elif Current_Mode == "CONVERSE":
       
-      Current_Mode = "STAND_BY"
-      # TO DO: Implement Converse.py first
-
-
-# Build ------------------------------------------------
-# Any tasks that need to be done before the assistant is ready to take queries
-# which improves performance or functionality.
-#
-#
-#
-# -----------------------------------------------------
-
-
+      pass
