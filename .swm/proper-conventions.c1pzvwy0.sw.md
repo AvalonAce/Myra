@@ -75,7 +75,9 @@ Initial File Comment Block
 
 </SwmSnippet>
 
-## Overall Code Structure
+## Folder Structure
+
+Use your own discretion when creating folders to hold files. They should follow the naming convention and be intuitive to determine what the files inside of the folders do (for example, <SwmPath>[audio/](/audio/)</SwmPath> contains all audio related files).
 
 &nbsp;
 
