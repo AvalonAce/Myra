@@ -1,1 +1,0 @@
-# TO DO: Implement this mode as a conversation mode where the assistant can engage in a conversation with the user, similar to ASSISTANT mode but with more advanced responses and more engaging conversation.
