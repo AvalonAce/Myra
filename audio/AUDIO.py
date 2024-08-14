@@ -6,11 +6,11 @@ import playsound
 from main_config import ELEVENLABS_API_KEY
 from audio.config import *
 
-global useTrueVoice
+global useSystemVoice
 global activeVoice
 global previousText
 
-useTrueVoice = True
+useSystemVoice = False
 activeVoice = voice("", "", 0.45, 0.72, 0.80, True)
 previousText = ""
 
@@ -87,7 +87,7 @@ payload = {
  
 def Say(text):
 	
-	if (useTrueVoice == False):
+	if (useSystemVoice == False):
 		engine = pyttsx3.init()
 		voices = engine.getProperty('voices')
 		

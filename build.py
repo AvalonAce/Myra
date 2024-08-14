@@ -5,8 +5,9 @@
 #
 #
 # -----------------------------------------------------
-from audio.AUDIO import *
+from audio.AUDIO import setVoice
+from main_config import BUILD_SETTINGS
 
-def Build(buildSettings):
-  setVoice(buildSettings["starterVoice"])
+def Build():
+  setVoice(BUILD_SETTINGS["starterVoice"])
   pass

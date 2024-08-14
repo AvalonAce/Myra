@@ -1,16 +1,11 @@
 from command.QUERY import *
 from build import *
 
-buildSettings = {
-  "starterVoice": "Taron",
-  "currentVoice": "Taron",
-}
-
 if __name__ == "__main__":
   
   # Initialization
   Current_Mode = "ASSISTANT"
-  Build(buildSettings)
+  Build()
   
   # Engagment Loop
   while(True):
