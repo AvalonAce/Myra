@@ -18,7 +18,7 @@ def Get_Query():
     while(True):
         
         # Initialize the query ----------------------------------------
-        query = takeCommand().lower()
+        query = Take_Command().lower()
         if query == "NONE": continue
         print(f"User: {query}")
         
@@ -43,7 +43,7 @@ def Get_Query():
         # Questions about Myra will be answered with a specific response for now. TO DO: Implement a more complex response which involves a call to personality API from character.ai.
         # General questions which are not about Myra will be met with a ChatGPT response.
         #
-        elif Question_Parse.is_question(query):
+        elif Question_Parse.Is_Question(query):
             
             
             # Identity 
@@ -101,5 +101,5 @@ def Get_Query():
         # Open Google
         elif "google" in query:
             Say("Opening Google...")
-            Simple_Requests.openWebSearch()
+            Open_Websearch("google.com")
             continue

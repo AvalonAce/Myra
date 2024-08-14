@@ -8,7 +8,7 @@ from testing.command.baseline_suite import *
 # Configure the this file and testing files as neccesary.
 # -----------------------------------------------------
 
-def run_test_suite():
+def Run_Test_Suite():
     # Build the test suite
     suite = unittest.TestSuite()
     

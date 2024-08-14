@@ -1,3 +1,7 @@
+# Question parsing ------------------------------------------------------------
+# This file contains functions to determine if a sentence is a question and miscellaneous functions related to question parsing.
+# ------------------------------------------------------------------------------
+
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
@@ -6,11 +10,8 @@ nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('stopwords')
 
-# Question parsing ------------------------------------------------------------
-# This file contains functions to determine if a sentence is a question and miscellaneous functions related to question parsing.
-# ------------------------------------------------------------------------------
 
-def is_question(sentence):
+def Is_Question(sentence):
     
     # Tokenize and tag
     words = word_tokenize(sentence)
@@ -31,8 +32,8 @@ def is_question(sentence):
     
     return False
 
-def test_is_question(sentence):
-    if is_question(sentence):
+def Test_Is_Question(sentence):
+    if Is_Question(sentence):
         print(f"'{sentence}' is a question.")
     else:
         print(f"'{sentence}' is not a question.")

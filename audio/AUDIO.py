@@ -10,15 +10,15 @@ global useSystemVoice
 global activeVoice
 global previousText
 
-useSystemVoice = False
-activeVoice = voice("", "", 0.45, 0.72, 0.80, True)
+useSystemVoice = True
+activeVoice = Voice("", "", 0.45, 0.72, 0.80, True)
 previousText = ""
 
 # this method is for taking the commands
 # and recognizing the command from the
 # speech_Recognition module we will use
 # the recongizer method for recognizing
-def takeCommand():
+def Take_Command():
 
 	r = sr.Recognizer()
 
@@ -141,12 +141,12 @@ def Say(text):
 
 
 
-def setPostCall():
+def Set_Post_Call():
     
     
     pass
 
-def setVoice(voiceName):
+def Set_Voice(voiceName):
 	global activeVoice
 	for v in voices:
 		if v.getName() == voiceName:

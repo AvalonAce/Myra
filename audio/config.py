@@ -1,7 +1,7 @@
 # Voices List --- Contains all the voices available in the system that the assistant can use and the user sets.
 # Voices consist of a name and an id. The id is used to set the voice of the assistant.
 
-class voice:
+class Voice:
     def __init__(self, name, id, stability, similarity, style, speakerBoost):
         self.name = name
         self.id = id
@@ -31,5 +31,5 @@ class voice:
 # List of voices
 # Enumerate as needed
 voices = [
-   voice("Taron", "Trr0A4w9Xb9LI5l7Vdqa", 0.35, 0.72, 0.55, True)
+   Voice("Taron", "Trr0A4w9Xb9LI5l7Vdqa", 0.35, 0.72, 0.55, True)
 ]
