@@ -12,7 +12,7 @@ The main features of audio configuration are:
 - Class voice
 - voices\[\]
 
-## Class voice
+## <SwmToken path="/audio/config.py" pos="4:0:2" line-data="class voice:">`class voice`</SwmToken>
 
 <SwmSnippet path="/audio/config.py" line="4">
 
@@ -67,7 +67,7 @@ Class voice is an object that defines a voice Myra can use and is based on the E
 
 ---
 
-Empty Voices Array
+Voices Array
 
 ```
 voices = [
