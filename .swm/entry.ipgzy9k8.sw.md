@@ -1,7 +1,7 @@
 ---
 title: Entry
 ---
-<SwmSnippet path="/ENTRY.py" line="9">
+<SwmSnippet path="/ENTRY.py" line="4">
 
 ---
 
@@ -12,7 +12,7 @@ if __name__ == "__main__":
   
   # Initialization
   Current_Mode = "ASSISTANT"
-  Build(buildSettings)
+  Build()
   
   # Engagment Loop
   while(True):
