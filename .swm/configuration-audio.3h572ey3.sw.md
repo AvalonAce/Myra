@@ -63,15 +63,15 @@ Class voice is an object that defines a voice Myra can use and is based on the E
 
 ## voices\[\]
 
-<SwmSnippet path="/audio/config.py" line="33">
+<SwmSnippet path="audio/config.py" line="33">
 
 ---
 
 Empty Voices Array
 
-```python
+```
 voices = [
-   
+   voice("Taron", "Trr0A4w9Xb9LI5l7Vdqa", 0.35, 0.72, 0.55, True)
 ]
 ```
 
@@ -79,7 +79,7 @@ voices = [
 
 </SwmSnippet>
 
-Voices array containing the preset voices that Myra can use. Initially empty, but more voices can be added using the constructor for class voice.
+Voices array containing the preset voices that Myra can use. Initially with one customized voice, but more voices can be added using the constructor for class voice.
 
 ## 
 
