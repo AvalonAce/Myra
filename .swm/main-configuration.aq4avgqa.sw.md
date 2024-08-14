@@ -1,25 +1,29 @@
 ---
 title: Main Configuration
 ---
-<SwmSnippet path="/main_config.py" line="1">
+<SwmSnippet path="main_config.py" line="1">
 
 ---
 
 Configuration Variables
 
-```python
+```
 OPEN_AI_API_KEY = "KEY_HERE"
 ELEVENLABS_API_KEY = "KEY_HERE"
 
 USER_NAME = "Boss"
 
+BUILD_SETTINGS = {
+  "starterVoice": "Taron",
+  "currentVoice": "Taron",
+}
 ```
 
 ---
 
 </SwmSnippet>
 
-main_config.py contains the main configuration variables for Myra including API keys, user variables and preferences, etc. All API keys must be filled with a usable API key for the assistant to work.
+main_config.py contains the main configuration variables for Myra including API keys, user variables and preferences, etc. All API keys must be filled with a usable API key for certain parts of the assistant to work.
 
 The current required keys are:
 
