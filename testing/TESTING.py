@@ -9,11 +9,12 @@ from testing.command.baseline_suite import *
 # -----------------------------------------------------
 
 def run_test_suite():
+    # Build the test suite
     suite = unittest.TestSuite()
     
     # Add testing classes and functions here
     # Format is as follows: addTest(TestClass('test_function'))
     suite.addTest(TestBaselineSuite('test_baseline_suite'))
     
-    
+    # Run the test suite
     return unittest.TextTestRunner(verbosity=2).run(suite)
