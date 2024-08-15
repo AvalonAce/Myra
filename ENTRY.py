@@ -1,5 +1,5 @@
 from command.QUERY import *
-from testing.TESTING import Run_Test_Suite
+from services.testing.TESTING import Run_Test_Suite
 from build import *
 
 Current_Mode = "ASSISTANT"
