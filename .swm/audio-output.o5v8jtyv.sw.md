@@ -18,15 +18,15 @@ This is the main audio production file for Myra. There are two operating voice m
 
 Here are the available functions:
 
-- <SwmToken path="/audio/AUDIO.py" pos="21:2:2" line-data="def Take_Command():">`Take_Command`</SwmToken>
-- <SwmToken path="/audio/AUDIO.py" pos="88:2:4" line-data="def Say(text):">`Say(text`</SwmToken>)
-- <SwmToken path="/audio/AUDIO.py" pos="149:2:4" line-data="def Set_Voice(voiceName):">`Set_Voice(voiceName`</SwmToken>)
+- <SwmToken path="/audio/AUDIO.py" pos="15:2:2" line-data="def Take_Command():">`Take_Command`</SwmToken>
+- <SwmToken path="/audio/AUDIO.py" pos="82:2:4" line-data="def Say(text):">`Say(text`</SwmToken>)
+- <SwmToken path="/audio/AUDIO.py" pos="141:2:4" line-data="def Set_Voice(voiceName):">`Set_Voice(voiceName`</SwmToken>)
 
-### <SwmToken path="/audio/AUDIO.py" pos="21:2:4" line-data="def Take_Command():">`Take_Command()`</SwmToken>
+### <SwmToken path="/audio/AUDIO.py" pos="15:2:4" line-data="def Take_Command():">`Take_Command()`</SwmToken>
 
 This function uses python's base speech recognition and audio recognition to recognize a user's voice and turn it into a query.
 
-<SwmSnippet path="/audio/AUDIO.py" line="21">
+<SwmSnippet path="/audio/AUDIO.py" line="15">
 
 ---
 
@@ -71,11 +71,11 @@ def Take_Command():
 
 </SwmSnippet>
 
-### <SwmToken path="/audio/AUDIO.py" pos="88:2:4" line-data="def Say(text):">`Say(text`</SwmToken>)
+### <SwmToken path="/audio/AUDIO.py" pos="82:2:4" line-data="def Say(text):">`Say(text`</SwmToken>)
 
-This function produces the audio reponse needed from a query. It chooses between using the system or custom voice and says the text parameter that was passed into the function. If the custom voice option is being used, the function will make a HTTP post call to Elevenlabs, and assuming successful, will write to a <SwmToken path="/audio/AUDIO.py" pos="133:10:12" line-data="		with open(&quot;audio/output/response.mp3&quot;, &quot;wb&quot;) as f:">`response.mp3`</SwmToken> audio file in the audio output folder and play the file as the response.&nbsp;
+This function produces the audio reponse needed from a query. It chooses between using the system or custom voice and says the text parameter that was passed into the function. If the custom voice option is being used, the function will make a HTTP post call to Elevenlabs, and assuming successful, will write to a <SwmToken path="/audio/AUDIO.py" pos="125:10:12" line-data="		with open(&quot;audio/output/response.mp3&quot;, &quot;wb&quot;) as f:">`response.mp3`</SwmToken> audio file in the audio output folder and play the file as the response.&nbsp;
 
-<SwmSnippet path="/audio/AUDIO.py" line="88">
+<SwmSnippet path="/audio/AUDIO.py" line="82">
 
 ---
 
@@ -84,7 +84,7 @@ This function produces the audio reponse needed from a query. It chooses between
 ```python
 def Say(text):
 	
-	if (useSystemVoice == False):
+	if (BUILD_SETTINGS["systemVoice"] == True):
 		engine = pyttsx3.init()
 		voices = engine.getProperty('voices')
 		
@@ -99,8 +99,6 @@ def Say(text):
 		engine.runAndWait()
 	
 	else:
-		global activeVoice
-		global previousText
   
 		# Build the URL		
 		url = f"{EL_url}{activeVoice.getId()}"

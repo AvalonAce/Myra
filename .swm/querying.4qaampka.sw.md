@@ -20,7 +20,7 @@ Regarding expansions, more functions can be made and are possibly necessary for 
 
 ## <SwmToken path="/command/QUERY.py" pos="15:2:4" line-data="def Get_Query():">`Get_Query()`</SwmToken>
 
-This function is the **main query** **loop** for **Assistant Mode**. It starts with an <SwmToken path="/command/QUERY.py" pos="11:2:4" line-data="def Introduction():">`Introduction()`</SwmToken> and follows a while loop to take in a query from <SwmToken path="/audio/AUDIO.py" pos="21:2:2" line-data="def Take_Command():">`Take_Command`</SwmToken> and respond to the query accordingly.&nbsp;
+This function is the **main query** **loop** for **Assistant Mode**. It starts with an <SwmToken path="/command/QUERY.py" pos="11:2:4" line-data="def Introduction():">`Introduction()`</SwmToken> and follows a while loop to take in a query from <SwmToken path="/audio/AUDIO.py" pos="15:2:2" line-data="def Take_Command():">`Take_Command`</SwmToken> and respond to the query accordingly.&nbsp;
 
 The current functionality of the function are:
 
@@ -45,17 +45,20 @@ def Get_Query():
         if query == "NONE": continue
         print(f"User: {query}")
         
+        # Chat gpt integration (NOT USED YET)
+        '''
         message = client.beta.threads.messages.create(
             thread_id=thread.id,
             role="user",
             content=query
         )
+        '''
         
         # Execute the query -------------------------------------------
         
         # Exit Condition
         if 'never mind' in query: 
-            Say("Kay... See you later...")
+            Say("Okay... See you later...")
             break
         
         # Question Parsing --------------------------------------------
@@ -79,7 +82,8 @@ def Get_Query():
             # General Questions ---------------------------------------
             # 
             
-            # Start GPT Response
+            # Start GPT Response (NOT USED YET)
+            '''
             response = client.chat.completions.create(
                 model="gpt-3.5-turbo-16k",
                 messages=[
@@ -87,6 +91,7 @@ def Get_Query():
                     {"role": "user", "content": query}
                 ]
             )
+            
             
             # Get the response
             notResponded = True
@@ -97,7 +102,7 @@ def Get_Query():
                     notResponded = False
                 else:
                     print('Waiting for response...')
-
+            '''
             
             
             

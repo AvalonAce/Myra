@@ -3,17 +3,18 @@ title: Entry / Main Function
 ---
 This is the main function for Myra that runs as the program's main execution thread. First, the program will be set to a default operating mode: Assistant, then it will Build using the build settings, and then run on a loop in the designated mode for the user.
 
-<SwmSnippet path="/ENTRY.py" line="5">
+<SwmSnippet path="ENTRY.py" line="5">
 
 ---
 
 Main Function for Myra
 
-```python
+```
+Current_Mode = "ASSISTANT"
+
 if __name__ == "__main__":
   
   # Initialization
-  Current_Mode = "ASSISTANT"
   Build()
   
   # Engagment Loop
@@ -33,6 +34,7 @@ if __name__ == "__main__":
     
     elif Current_Mode == "CONVERSE":
       
+      pass
 ```
 
 ---
