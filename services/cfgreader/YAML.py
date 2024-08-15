@@ -2,7 +2,7 @@
 # Config Reader - YAML ----------------------------------------------
 # This module reads YAML files and returns the data as a dictionary.
 # This service can be used to read configuration files in YAML format.
-# For Python only.
+# For Python only. NEEDS ABILITY TO WAIT FOR FILE TO BE DONE WRITING!!!
 # ------------------------------------------------------------------
 import yaml
 
