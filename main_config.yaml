@@ -1,9 +1,0 @@
-keys:
-  open_ai_api_key: "KEY_HERE"
-  elevenlabs_api_key: "KEY_HERE"
-user_settings:
-  user_name: "Boss"
-build_settings:
-  systemVoice: true
-  starterVoice: "Taron"
-  currentVoice: "Taron"
