@@ -4,5 +4,6 @@ keys:
 user_settings:
   user_name: "Boss"
 build_settings:
+  systemVoice: true
   starterVoice: "Taron"
   currentVoice: "Taron"
