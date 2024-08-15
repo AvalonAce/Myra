@@ -2,10 +2,11 @@ from command.QUERY import *
 from testing.TESTING import Run_Test_Suite
 from build import *
 
+Current_Mode = "ASSISTANT"
+
 if __name__ == "__main__":
   
   # Initialization
-  Current_Mode = "ASSISTANT"
   Build()
   
   # Engagment Loop
