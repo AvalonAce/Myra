@@ -90,7 +90,7 @@ class TestBaselineSuite(unittest.TestCase):
 When writing tests, follow a few guidelines.
 
 - Try to test as small as possible, following unit testing practices.
-- Place files you create in folders that follow the main repo structure, ordering by function.
+- Place files you create in folders that follow the main repo structure, separating by function.
 - **Again, do NOT commit changes from** <SwmPath>[services/testing/TESTING.py](/services/testing/TESTING.py)</SwmPath>**. You may edit the file to your own needs.**
 - If you are testing the customized voice, be aware of your **character limit** on Elevenlabs to ensure you don't run out.
 
