@@ -9,8 +9,9 @@ This the configuration doc for any audio related settings.
 
 The main features of audio configuration are:
 
-- Class voice
-- voices\[\]
+- <SwmToken path="/audio/config.py" pos="4:0:2" line-data="class Voice:">`class Voice`</SwmToken>
+- <SwmToken path="/audio/config.py" pos="33:0:0" line-data="voices = [">`voices`</SwmToken>
+- <SwmToken path="/audio/config.py" pos="37:0:0" line-data="activeVoice = voices[0]">`activeVoice`</SwmToken>
 
 ## <SwmToken path="/audio/config.py" pos="4:0:2" line-data="class Voice:">`class Voice`</SwmToken>
 
@@ -61,7 +62,7 @@ Class voice is an object that defines a voice Myra can use and is based on the E
 - style: voice style setting (float, 0-1)
 - speakerBoost: boost to audio similarity which limits generation speed (boolean)
 
-## voices\[\]
+## <SwmToken path="/audio/config.py" pos="33:0:0" line-data="voices = [">`voices`</SwmToken>
 
 <SwmSnippet path="/audio/config.py" line="33">
 
@@ -80,6 +81,12 @@ voices = [
 </SwmSnippet>
 
 Voices array containing the preset voices that Myra can use. Initially with one customized voice, but more voices can be added using the constructor for class voice.
+
+## <SwmToken path="/audio/config.py" pos="37:0:0" line-data="activeVoice = voices[0]">`activeVoice`</SwmToken>
+
+This variable is the current Voice for the assistant. It is a type of class <SwmToken path="/audio/config.py" pos="4:2:2" line-data="class Voice:">`Voice`</SwmToken> and is initially set to the premade voice made for Myra. It can be accessed through import at any time.
+
+&nbsp;
 
 ## 
 
