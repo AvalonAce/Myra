@@ -5,7 +5,7 @@ from command.Simple_Requests import *
 from interpretation.assistant import Question_Parse
 
 
-from main_config import OPEN_AI_API_KEY, USER_NAME
+from main_config import USER_NAME
 from command.config import *
 
 def Introduction():
@@ -23,17 +23,20 @@ def Get_Query():
         if query == "NONE": continue
         print(f"User: {query}")
         
+        # Chat gpt integration (NOT USED YET)
+        '''
         message = client.beta.threads.messages.create(
             thread_id=thread.id,
             role="user",
             content=query
         )
+        '''
         
         # Execute the query -------------------------------------------
         
         # Exit Condition
         if 'never mind' in query: 
-            Say("Kay... See you later...")
+            Say("Okay... See you later...")
             break
         
         # Question Parsing --------------------------------------------
@@ -57,7 +60,8 @@ def Get_Query():
             # General Questions ---------------------------------------
             # 
             
-            # Start GPT Response
+            # Start GPT Response (NOT USED YET)
+            '''
             response = client.chat.completions.create(
                 model="gpt-3.5-turbo-16k",
                 messages=[
@@ -65,6 +69,7 @@ def Get_Query():
                     {"role": "user", "content": query}
                 ]
             )
+            
             
             # Get the response
             notResponded = True
@@ -75,7 +80,7 @@ def Get_Query():
                     notResponded = False
                 else:
                     print('Waiting for response...')
-
+            '''
             
             
             

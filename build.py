@@ -1,6 +1,6 @@
 # Build File ----------------------------------------------
-# Any tasks that need to be done before the assistant is ready to take queries
-# which improves performance or functionality.
+# Any tasks that need to be done before the assistant is ready to take
+# queries which improves performance or functionality.
 #
 #
 #

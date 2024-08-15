@@ -3,15 +3,9 @@ import speech_recognition as sr
 import requests
 import playsound
 
-from main_config import ELEVENLABS_API_KEY
+from main_config import ELEVENLABS_API_KEY, BUILD_SETTINGS
 from audio.config import *
 
-global useSystemVoice
-global activeVoice
-global previousText
-
-useSystemVoice = False
-activeVoice = Voice("", "", 0.45, 0.72, 0.80, True)
 previousText = ""
 
 # this method is for taking the commands
@@ -87,7 +81,7 @@ payload = {
  
 def Say(text):
 	
-	if (useSystemVoice == False):
+	if (BUILD_SETTINGS["systemVoice"] == True):
 		engine = pyttsx3.init()
 		voices = engine.getProperty('voices')
 		
@@ -102,8 +96,6 @@ def Say(text):
 		engine.runAndWait()
 	
 	else:
-		global activeVoice
-		global previousText
   
 		# Build the URL		
 		url = f"{EL_url}{activeVoice.getId()}"
@@ -147,7 +139,6 @@ def Set_Post_Call():
     pass
 
 def Set_Voice(voiceName):
-	global activeVoice
 	for v in voices:
 		if v.getName() == voiceName:
 			activeVoice = v
