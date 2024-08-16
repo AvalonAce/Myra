@@ -11,13 +11,13 @@ We use python's **unittest** for testing purposes. A structure exists to support
 
 This is the main testing file that runs testing suites. <SwmToken path="/services/testing/TESTING.py" pos="11:2:4" line-data="def Run_Test_Suite():">`Run_Test_Suite()`</SwmToken> is the function called in the main function which runs tests. It is a scaffold to build a suite based on any testing classes created.
 
-To prevent any overlapping changes due to testing needs, **you should NOT commit any changes to this file.** You may commit any testing files (like <SwmPath>[services/testing/command/baseline_suite.py](/services/testing/command/baseline_suite.py)</SwmPath>) provided they are in an appropriate directory and follow named conventions.
+To prevent any overlapping changes due to testing needs, **you should NOT commit any changes to this file.** You may commit any testing files (like <SwmPath>[services/testing/audio/baseline_suite.py](/services/testing/audio/baseline_suite.py)</SwmPath>) provided they are in an appropriate directory and follow named conventions.
 
 To add tests to the prebuilt suite, use the singular baseline test in the testing file as an example.
 
 If you wish to build your own suite(s) to call later, write them in separate files in an appropriate directory and edit this file to run them.
 
-<SwmSnippet path="services/testing/TESTING.py" line="11">
+<SwmSnippet path="/services/testing/TESTING.py" line="11">
 
 ---
 
@@ -49,13 +49,13 @@ You can then use any of the following methods to run tests:
 
 ## Writing tests
 
-### <SwmPath>[services/testing/command/baseline_suite.py](/services/testing/command/baseline_suite.py)</SwmPath>
+### <SwmPath>[services/testing/audio/baseline_suite.py](/services/testing/audio/baseline_suite.py)</SwmPath>
 
-In order to write a test or a suite of tests, a class must be created to house testing functions. Each class has a <SwmToken path="/services/testing/command/baseline_suite.py" pos="5:4:6" line-data="class TestBaselineSuite(unittest.TestCase):">`unittest.TestCase`</SwmToken> parameter and can have a <SwmToken path="/services/testing/command/baseline_suite.py" pos="6:3:3" line-data="    def setUp(self):">`setUp`</SwmToken>, <SwmToken path="/services/testing/command/baseline_suite.py" pos="10:3:3" line-data="    def tearDown(self):">`tearDown`</SwmToken>, or <SwmToken path="/services/testing/TESTING.py" pos="16:17:17" line-data="    # Format is as follows: addTest(TestClass(&#39;test_function&#39;))">`test_function`</SwmToken>.
+In order to write a test or a suite of tests, a class must be created to house testing functions. Each class has a <SwmToken path="/services/testing/audio/baseline_suite.py" pos="5:4:6" line-data="class TestBaselineSuite(unittest.TestCase):">`unittest.TestCase`</SwmToken> parameter and can have a <SwmToken path="/services/testing/audio/baseline_suite.py" pos="6:3:3" line-data="    def setUp(self):">`setUp`</SwmToken>, <SwmToken path="/services/testing/audio/baseline_suite.py" pos="10:3:3" line-data="    def tearDown(self):">`tearDown`</SwmToken>, or <SwmToken path="/services/testing/TESTING.py" pos="16:17:17" line-data="    # Format is as follows: addTest(TestClass(&#39;test_function&#39;))">`test_function`</SwmToken>.
 
 The official python testing docs can be found here: <https://docs.python.org/3/library/unittest.html#organizing-tests>
 
-<SwmSnippet path="/services/testing/command/baseline_suite.py" line="1">
+<SwmSnippet path="/services/testing/audio/baseline_suite.py" line="1">
 
 ---
 
