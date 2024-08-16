@@ -16,18 +16,18 @@ Myra is a personalized AI assistant that aims to provide a unique and interactiv
 
 1. Clone the repository: `git clone https://github.com/your-username/PCAA.git`
 2. Install the required dependencies: `npm install`
-3. Configure the necessary environment variables
-4. Start the application: `npm start`
+3. Configure the necessary environment variables.
+4. Start the application using python: `py ENTRY.py`
 
 ## Usage
 
-1. Open the PCAA application on your preferred platform or device
+1. Open Myra on your preferred platform or device
 2. Follow the on-screen instructions to set up your personalized assistant
 3. Start interacting with the AI assistant by asking questions or giving commands
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to PCAA, please follow these steps:
+Contributions are welcome! If you'd like to contribute to Myra, please follow these steps:
 
 1. Fork the repository
 2. Create a new branch: `git checkout -b feature/your-feature-name`
