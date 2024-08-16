@@ -5,7 +5,7 @@ The proper conventions for the repo can found in this document. Please refer to 
 
 ## Naming Conventions
 
-These are the proper naming conventions to be followed for files, folderg, and anything else:
+These are the proper naming conventions to be followed for files, folders, and anything else:
 
 - **Folders:** all lower case (audio, command)
 - **Configuration Files:** all lower case, must be named **config**.&nbsp;
