@@ -4,6 +4,5 @@ playsound==1.2.2
 PyAudio
 pyttsx3
 PyYAML
-PyYAML
 SpeechRecognition
 elevenlabs
