@@ -14,8 +14,8 @@ Myra is a personalized AI assistant that aims to provide a unique and interactiv
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/PCAA.git`
-2. Install the required dependencies: `npm install`
+1. Clone the repository: `git clone https://github.com/your-username/Myra.git`
+2. Install the required dependencies using pip: `pip install -r requirements.txt`
 3. Configure the necessary environment variables.
 4. Start the application using python: `py ENTRY.py`
 
