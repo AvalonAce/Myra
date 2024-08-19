@@ -2,6 +2,7 @@ import pyttsx3
 import speech_recognition as sr
 import requests
 import playsound
+import os
 
 from main_config import ELEVENLABS_API_KEY, BUILD_SETTINGS
 from audio.config import *
@@ -130,6 +131,9 @@ def Say(text):
 		
 		# Close the file
 		f.close()
+		
+		# Delete the file
+		os.remove("audio/output/response.mp3")
 
 
 
