@@ -1,6 +1,6 @@
 import unittest
 
-from services.testing.command.baseline_suite import *
+from services.testing.audio.baseline_suite import *
 
 # Testing Suite ---------------------------------------
 # This is the high-level function that will run all testing functions.
