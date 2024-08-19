@@ -23,6 +23,9 @@ if __name__ == "__main__":
       # Begin the assistant's main loop to take queries
       Get_Query()
       
+      # adjust later to accomodate for changing modes
+      break
+      
     
     elif Current_Mode == "CONVERSE":
       
